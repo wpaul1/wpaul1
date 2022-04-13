@@ -1,0 +1,730 @@
+:root {
+  --primary-color: #f2cb05;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 1em;
+}
+
+.navbar .logo {
+  width: 80%;
+  min-width: 100px;
+  margin-right: 2em;
+}
+
+.navbar .nav-list {
+  display: none;
+}
+
+.navbar .nav-right-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  place-content: space-between;
+}
+
+.navbar .nav-right-top .donate-cta {
+  background: var(--primary-color);
+  text-decoration: none;
+  padding: 1em;
+  margin: 0 2em 0 1em;
+  border-radius: 1em;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .mobile-menu-btn {
+  position: absolute;
+  right: 0px;
+  margin: 1em;
+  width: 20px;
+  cursor: pointer;
+}
+
+.navbar .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  float: left;
+}
+
+.navbar .search-form .search-field {
+  height: 2em;
+  padding: 1em;
+  width: 95%;
+}
+
+.navbar .search-form .search-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: -35px;
+}
+
+.navbar .search-form .search-button img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-btn {
+  display: block;
+}
+
+.nav-list-style {
+  background: var(--primary-color);
+  position: fixed;
+  z-index: 99;
+  width: 66%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  text-decoration: none;
+}
+
+ul li .non-parent {
+  color: black;
+  background: #f2f2f2;
+  border-radius: 5px;
+  margin-right: 35px;
+  margin-top: 25px;
+}
+
+ul li p {
+  padding: .3em;
+  display: block;
+  font-size: 1.3em;
+  background: #f2f2f2;
+  border-radius: 5px;
+  margin-right: 35px;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+  padding: .3em;
+  display: block;
+  font-size: 1.3em;
+  background: white;
+  margin-right: 35px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+ul li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hero .hero-left {
+  background: var(--primary-color);
+  padding-bottom: 1em;
+}
+
+.hero .hero-left .hero-text {
+  padding: 1em 0 1em 2em;
+}
+
+.hero .hero-left .hero-text h2 {
+  padding-top: -.3em;
+}
+
+.hero .hero-left .hero-cta {
+  border: 1px solid black;
+  width: 250px;
+  text-align: center;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.hero .hero-left .hero-cta:hover {
+  background: white;
+}
+
+.hero .hero-left .hero-right img {
+  width: 100%;
+  max-width: 700px;
+}
+
+.sub-hero {
+  color: #f2f2f2;
+  background: url(../images/subhero.webp) no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding-bottom: 2em;
+}
+
+.sub-hero .sub-hero-text {
+  padding: 1em 0 1em 2em;
+}
+
+.sub-hero .sub-hero-cta {
+  background: #f2f2f2;
+  text-align: center;
+  color: black;
+  padding: 1em;
+  width: 300px;
+  border-radius: 5px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.sub-hero .sub-hero-cta:hover {
+  background: var(--primary-color);
+}
+
+.commitments {
+  position: relative;
+  margin-left: 0;
+  padding: 0;
+}
+
+.commitments h1 {
+  margin: 1em;
+}
+
+.commitments .commit1 {
+  position: relative;
+  margin-left: 0em;
+  margin-bottom: 5em;
+}
+
+.commitments .commit1 .commit1-text {
+  background: url(../images/commitment1.webp) no-repeat;
+  background-size: cover;
+  height: 30em;
+  width: 400px;
+}
+
+.commitments .commit1 .commit1-text-bg {
+  background: purple;
+  position: absolute;
+  bottom: 0;
+  opacity: .7;
+  width: 400px;
+  padding-bottom: 1.3em;
+}
+
+.commitments .commit1 a {
+  text-align: center;
+  width: 150px;
+  margin-left: 28px;
+  border: 2px solid white;
+  background: purple;
+  color: white;
+}
+
+.commitments .commit1 a:hover {
+  background: white;
+  color: black;
+}
+
+.commitments .commit1 p {
+  background: none;
+  color: white;
+  margin-left: 20px;
+}
+
+.commitments .commit1 h3 {
+  width: 400px;
+}
+
+.commitments .commit2 {
+  position: relative;
+  margin-left: 0em;
+  margin-bottom: 5em;
+}
+
+.commitments .commit2 .commit2-text {
+  background: url(../images/commitment2.webp) no-repeat;
+  background-size: cover;
+  height: 30em;
+  width: 400px;
+}
+
+.commitments .commit2 .commit2-text-bg {
+  background: purple;
+  position: absolute;
+  bottom: 0;
+  opacity: .7;
+  width: 400px;
+  padding-bottom: 1.3em;
+}
+
+.commitments .commit2 a {
+  text-align: center;
+  width: 150px;
+  margin-left: 28px;
+  border: 2px solid white;
+  background: purple;
+  color: white;
+}
+
+.commitments .commit2 a:hover {
+  background: white;
+  color: black;
+}
+
+.commitments .commit2 p {
+  background: none;
+  color: white;
+  margin-left: 20px;
+}
+
+.commitments .commit2 h3 {
+  width: 400px;
+}
+
+.commitments .commit3 {
+  margin-bottom: 5em;
+  margin-left: 0em;
+}
+
+.commitments .commit3 .commit3-text {
+  background: url(../images/commitment3.webp) no-repeat;
+  background-size: cover;
+  height: 30em;
+  width: 400px;
+}
+
+.commitments .commit3 .commit3-text-bg {
+  background: purple;
+  position: absolute;
+  bottom: 0;
+  opacity: .7;
+  width: 400px;
+  padding-bottom: 1.3em;
+}
+
+.commitments .commit3 a {
+  text-align: center;
+  width: 150px;
+  margin-left: 28px;
+  border: 2px solid white;
+  background: purple;
+  color: white;
+}
+
+.commitments .commit3 a:hover {
+  background: white;
+  color: black;
+}
+
+.commitments .commit3 p {
+  background: none;
+  color: white;
+  margin-left: 20px;
+}
+
+.commitments .commit3 h3 {
+  width: 400px;
+}
+
+.approach .container {
+  background: var(--primary-color);
+  padding-left: 1.5em;
+  padding-top: .1em;
+  padding-bottom: .7em;
+}
+
+.approach img {
+  width: 400px;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.approach .app-cta {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: var(--primary-color);
+  border: 1px solid black;
+  text-align: center;
+  width: 250px;
+  padding: 1em;
+  margin-bottom: .5em;
+}
+
+.approach .app-cta:hover {
+  background: black;
+}
+
+.approach .app-cta:hover a {
+  color: white;
+}
+
+.approach .app-cta a {
+  color: black;
+  font-weight: bold;
+}
+
+.support .support-right {
+  background: purple;
+  color: white;
+  margin-top: 10px;
+  padding: .2em 0 2em 1em;
+}
+
+.support .support-right .support-cta {
+  border: 1px solid white;
+  background: purple;
+  width: 300px;
+  padding-block: 1em;
+  text-align: center;
+}
+
+.support .support-right .support-cta:hover {
+  background: black;
+}
+
+.support .support-right .support-cta a {
+  color: white;
+}
+
+.support .support-left img {
+  width: 90%;
+  margin-left: 50%;
+  margin-top: 1em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.footer {
+  background-color: var(--primary-color);
+}
+
+.footer .footer-left {
+  padding-left: 1.5em;
+}
+
+.footer .footer-left img {
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.footer .footer-left .address p {
+  font-size: small;
+}
+
+.footer .footer-left .address .contact a {
+  font-size: small;
+}
+
+.footer .footer-right {
+  padding-left: 1.5em;
+  padding-bottom: .5em;
+  padding-right: .5em;
+}
+
+.footer .footer-right ul {
+  margin-left: 0px;
+  font-size: .75em;
+}
+
+.footer .footer-right ul ul li {
+  background: none;
+}
+
+.footer .footer-right img {
+  float: right;
+  margin-top: -10px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .mobile-menu-btn, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container .logo {
+    width: 100%;
+    height: auto;
+  }
+  .navbar .nav-right-bottom .nav-list {
+    display: -ms-grid;
+    display: grid;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar .nav-right-bottom .nav-list li {
+    padding: 0;
+  }
+  .navbar .nav-right-bottom .nav-list p, .navbar .nav-right-bottom .nav-list a {
+    width: 150px;
+    margin: 0 .3em 0 .3em;
+    padding: 0;
+  }
+  .navbar .nav-right-bottom .nav-list li ul {
+    display: none;
+  }
+  .navbar .nav-right-bottom .nav-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+  }
+  .navbar .nav-right-bottom .nav-list ul:hover li ul {
+    display: block;
+    margin: 0;
+    padding: 1em 0 0 0;
+  }
+  section.hero h2 {
+    margin-left: 5em;
+  }
+  section.hero .hero-left {
+    width: 100%;
+  }
+  section.hero .hero-left .hero-cta {
+    margin-left: 300px;
+  }
+  section.hero .hero-right img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 45%;
+    margin-top: -275px;
+    height: auto;
+  }
+  section.commitments .commit1 {
+    position: relative;
+    margin-left: 0em;
+    margin-bottom: 5em;
+    margin-top: 3em;
+  }
+  section.commitments .commit1 .commit1-text {
+    background: url(../images/commitment1.webp) no-repeat;
+    background-size: cover;
+    height: 30em;
+    width: 400px;
+  }
+  section.commitments .commit1 .commit1-text-bg {
+    background: purple;
+    position: absolute;
+    bottom: 0;
+    opacity: .7;
+    width: 400px;
+    padding-bottom: 1.3em;
+    -webkit-transform: translateY(-1.3em);
+            transform: translateY(-1.3em);
+  }
+  section.commitments .commit1 a {
+    text-align: center;
+    width: 150px;
+    margin-left: 28px;
+    border: 2px solid white;
+    background: purple;
+    color: white;
+  }
+  section.commitments .commit1 a:hover {
+    background: white;
+    color: black;
+  }
+  section.commitments .commit1 p {
+    background: none;
+    color: white;
+    margin-left: 20px;
+  }
+  section.commitments .commit1 h3 {
+    width: 400px;
+  }
+  section.commitments .commit2 {
+    position: relative;
+    margin-left: 0em;
+    margin-bottom: 5em;
+    margin-top: 3em;
+  }
+  section.commitments .commit2 .commit2-text {
+    background: url(../images/commitment2.webp) no-repeat;
+    background-size: cover;
+    height: 30em;
+    width: 400px;
+  }
+  section.commitments .commit2 .commit2-text-bg {
+    background: purple;
+    position: absolute;
+    bottom: 0;
+    opacity: .7;
+    width: 400px;
+    padding-bottom: 1.3em;
+  }
+  section.commitments .commit2 a {
+    text-align: center;
+    width: 150px;
+    margin-left: 28px;
+    border: 2px solid white;
+    background: purple;
+    color: white;
+  }
+  section.commitments .commit2 a:hover {
+    background: white;
+    color: black;
+  }
+  section.commitments .commit2 p {
+    background: none;
+    color: white;
+    margin-left: 20px;
+  }
+  section.commitments .commit2 h3 {
+    width: 400px;
+  }
+  section.commitments .commit3 {
+    margin-top: 3em;
+    margin-bottom: 5em;
+    margin-left: 0em;
+  }
+  section.commitments .commit3 .commit3-text {
+    background: url(../images/commitment3.webp) no-repeat;
+    background-size: cover;
+    height: 30em;
+    width: 400px;
+  }
+  section.commitments .commit3 .commit3-text-bg {
+    background: purple;
+    position: absolute;
+    bottom: 0;
+    opacity: .7;
+    width: 400px;
+    padding-bottom: 1.3em;
+    -webkit-transform: translateY(-7.7em);
+            transform: translateY(-7.7em);
+  }
+  section.commitments .commit3 a {
+    text-align: center;
+    width: 150px;
+    margin-left: 28px;
+    border: 2px solid white;
+    background: purple;
+    color: white;
+  }
+  section.commitments .commit3 a:hover {
+    background: white;
+    color: black;
+  }
+  section.commitments .commit3 p {
+    background: none;
+    color: white;
+    margin-left: 20px;
+  }
+  section.commitments .commit3 h3 {
+    width: 400px;
+  }
+  section.commitments ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 50%;
+    -webkit-transform: translateX(-85%);
+            transform: translateX(-85%);
+  }
+  section.commitments ul li {
+    padding-inline: .5em;
+    margin-left: -5em;
+  }
+  section.approach .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  section.approach .container .approach1, section.approach .container .approach2, section.approach .container h1 {
+    margin-top: 1em;
+    margin-left: 7.5em;
+  }
+  section.approach .container .approach1 img, section.approach .container .approach2 img, section.approach .container h1 img {
+    width: 300px;
+    height: 200px;
+  }
+  section.support .support-right {
+    text-align: right;
+    padding-right: 15em;
+  }
+  section.support .support-right .support-cta {
+    -webkit-transform: translateX(60em);
+            transform: translateX(60em);
+  }
+  section.support .support-left {
+    position: absolute;
+    -webkit-transform: translate(5em, -15em);
+            transform: translate(5em, -15em);
+  }
+  section.support .support-left img {
+    width: 500px;
+  }
+  section.footer .footer-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: .5em;
+    float: right;
+    -webkit-transform: translateY(-25em);
+            transform: translateY(-25em);
+  }
+  section.footer .footer-right li {
+    width: 100px;
+  }
+  section.footer .footer-right .socials img {
+    -webkit-transform: translateY(-1.5em);
+            transform: translateY(-1.5em);
+    padding-inline: .5em;
+  }
+  section.footer .footer-right .sub-field {
+    width: 20%;
+    float: right;
+    -webkit-transform: translateY(-8em);
+            transform: translateY(-8em);
+  }
+  section.footer .footer-right .sub-field a {
+    background: white;
+    border: 1px solid black;
+    padding: .3em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
